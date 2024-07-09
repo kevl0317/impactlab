@@ -1,0 +1,20 @@
+2024-01-23 07:32:58.305 | INFO     | __main__:main:97 - Demo options: 
+ Namespace(cfg='data/pare/checkpoints/pare_w_3dpw_config.yaml', ckpt='data/pare/checkpoints/pare_w_3dpw_checkpoint.ckpt', exp='', mode='video', vid_file='/content/drive/MyDrive/1st-year-project/Study1/Stimuli_psRec/COCO_train2014_000000155194.jpg', image_folder=None, output_folder='/content/drive/MyDrive/1st-year-project/Study1/Annotation/PARE_logs/demo', tracking_method='bbox', detector='yolo', yolo_img_size=416, tracker_batch_size=12, staf_dir='/home/mkocabas/developments/openposetrack', batch_size=16, display=False, smooth=False, min_cutoff=0.004, beta=1.0, no_render=False, no_save=False, wireframe=False, sideview=False, draw_keypoints=False, save_obj=False, smplify=False)
+2024-01-23 07:32:58.664 | INFO     | pare.models.backbone.hrnet:init_weights:530 - => init weights from normal distribution
+2024-01-23 07:32:58.884 | WARNING  | pare.models.backbone.hrnet:init_weights:558 - IMPORTANT WARNING!! Please download pre-trained models if you are in TRAINING mode!
+2024-01-23 07:32:58.884 | INFO     | pare.models.head.pare_head:__init__:125 - "Keypoint Attention" should be activated to be able to use part segmentation
+2024-01-23 07:32:58.885 | INFO     | pare.models.head.pare_head:__init__:126 - Overriding use_keypoint_attention
+2024-01-23 07:32:58.900 | INFO     | pare.models.head.pare_head:__init__:327 - Keypoint attention is active
+2024-01-23 07:32:59.309 | INFO     | pare.core.tester:_load_pretrained_model:117 - Loading pretrained model from data/pare/checkpoints/pare_w_3dpw_checkpoint.ckpt
+2024-01-23 07:32:59.757 | WARNING  | pare.utils.train_utils:load_pretrained_model:45 - Removing "model." keyword from state_dict keys..
+2024-01-23 07:32:59.828 | INFO     | pare.core.tester:_load_pretrained_model:120 - Loaded pretrained weights from "data/pare/checkpoints/pare_w_3dpw_checkpoint.ckpt"
+2024-01-23 07:32:59.836 | INFO     | __main__:main:103 - Input video number of frames 1
+2024-01-23 07:33:00.817 | INFO     | pare.core.tester:run_on_video:362 - Running PARE on each tracklet...
+2024-01-23 07:33:01.852 | INFO     | pare.core.tester:run_on_video:437 - Converting smpl keypoints 2d to original image coordinate
+2024-01-23 07:33:01.859 | INFO     | __main__:main:115 - PARE FPS: 0.96
+2024-01-23 07:33:01.859 | INFO     | __main__:main:117 - Total time spent: 2.02 seconds (including model loading time).
+2024-01-23 07:33:01.860 | INFO     | __main__:main:118 - Total FPS (including model loading time): 0.49.
+2024-01-23 07:33:01.860 | INFO     | __main__:main:121 - Saving output results to "/content/drive/MyDrive/1st-year-project/Study1/Annotation/PARE_logs/demo/COCO_train2014_000000155194.jpg/pare_output.pkl".
+2024-01-23 07:33:02.025 | INFO     | pare.core.tester:render_results:470 - Rendering output video, writing frames to /content/drive/MyDrive/1st-year-project/Study1/Annotation/PARE_logs/demo/COCO_train2014_000000155194.jpg/tmp_images_output
+2024-01-23 07:33:02.589 | INFO     | __main__:main:132 - Saving result video to /content/drive/MyDrive/1st-year-project/Study1/Annotation/PARE_logs/demo/COCO_train2014_000000155194.jpg/COCO_train2014_000000155194.jpg__result.mp4
+2024-01-23 07:33:02.908 | INFO     | __main__:main:160 - ================= END =================
