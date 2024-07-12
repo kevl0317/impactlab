@@ -8,3 +8,6 @@ data/Stimuli_psRec
 *.rar
 *.pptx
 *.pth
+*.jsonl
+*.jpg
+*.png
